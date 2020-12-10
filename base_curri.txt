@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Curriculum VT1</title>
+</head>
+
+<body>
+
+    <nav id="m">Menu</nav>
+    <span><a href="#a">Experiencia</a>
+    <span><a href="#b">Personal</a>
+    <span><a href="#c">Estudios</a>
+    <span><a href="#d">Hobiies</a>
+ 
+    <section>
+    <p><img src="img/img1.JPG">
+        <h1>CURRICULUM VITAE</h1>
+        <p>Anthony González Villablanca</p>
+    </p>
+</section>
+    <section>
+        <article>
+            <h2>Experiencia</h2>
+
+            <h3>2017-2020</h3>
+            <p>
+                Especialista de Cobranzas
+                    <ul>
+                        <li>Administración de BD</li>
+                        <li>Extracción de información de clientes para desarrollar Dashboard y toma de decisiones</li>
+                        <li>Dashboard para el área: Power BI - Qlikview</li>
+                        <li>Participación en desarrollo de software para el área de Cobranzas</li>
+                    </ul>
+          
+            </p>
+            
+            <h3>2012-2017</h3>
+            <p>
+               Analista de Sistemas
+               
+                    <ul>
+                        <li>Administración de BD</li>
+                        <li>Desarrollo de software en c#</li>
+                        <li>Administración de campañas de cobranzas</li>
+                    </ul>
+               
+            </p>
+        </article>
+        <a href="#m">Arriba</a>
+
+    </section>
+
+    <section>
+        <article>
+            <h2></h2>
+          
+                <ul>
+                    <li>Dirección:Psje Becacina #4960, San Bernardo, Santiago.
+                    </li>
+                    <li>Electronico: an.gonzalez.villablancam@gmail.com</li>
+                    <li>Teléfono:+569 5524 9664</li>
+                </ul>
+        </article>
+        <a href="#m">Arriba
+
+    </section>
+    <section>
+        <article>
+            <h2>Estudios</h2>
+       
+                <ul>
+                    <li>AIEP: Ingeniería de ejecución en informática.
+                    </li>
+                    <li>UTEM: Ingeniería en informática (incompleto)</li>
+                </ul>
+        </article>
+   
+        <a href="#m"><b><i>Arriba</i></b></a>
+
+    </section>
+
+    <section>
+        <article>
+            <h2>Hobbies</h2>
+
+          Patinar
+         
+                <a href="https://imaginasantiago.com/que-hacer/actividades/patinaje-y-skate/">Donde patinar en Chile?</a>
+            
+            Cocinar
+            
+                <a href="https://www.chilerecetas.cl/joomla/">Recetas para cocinar</a>
+            
+            Parrillar
+            
+                <a href="https://www.elclubdelparrillero.cl/">Club de Parrileros Chile</a>
+            
+        </article>
+       
+        <a href="#m"><b><i>Arriba</i></b></a>
+        
+    </section>
+</body>
+
+</html>

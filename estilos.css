@@ -1,0 +1,143 @@
+                *,
+                *:before,
+                *:after {
+                    margin: 0;
+                    padding: 0;
+                    outline: 0;
+                    box-sizing: 0;
+                }
+                
+                body {
+                    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+                    background-color: #f4f4f4;
+                }
+                
+                .menu {
+                    background: #e9183b;
+                    height: 75px;
+                    width: 100vw;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #ffffff;
+                    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+                }
+                
+                .logo {
+                    color: #ffffff;
+                    font-size: 35px;
+                    padding: 0 80px;
+                    font-weight: bold;
+                }
+                
+                .menu_items {
+                    display: flex;
+                    list-style: none;
+                    margin-right: 30px;
+                }
+                
+                .menu_items li {
+                    border-radius: 3px;
+                    margin: 0 2px;
+                }
+                
+                .menu_items li a {
+                    padding: 7px 13px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+                    /*para que los links ocupen todo el espacio disponible dentro de los Li*/
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
+                
+                .menu_items li:hover,
+                li.active {
+                    background-color: rgba(0, 0, 0, .3);
+                    transition: .4s;
+                    /*con esto evito que el cambio de fondo sea muy brusco*/
+                }
+                
+                .btn_menu {
+                    margin-right: 30px;
+                    font-size: 25px;
+                    color: #ffffff;
+                    cursor: pointer;
+                    display: none;
+                    /*oculto el menu para que no se vea en web pero si en movil*/
+                }
+                
+                ul.show {
+                    /*esto es para mostrar el menu en celulares*/
+                    top: 65px;
+                }
+                
+                @media screen and (max-width: 958px) {
+                    .logo {
+                        font-size: 30px;
+                        padding-left: 35px;
+                    }
+                    .menu_items li a {
+                        font-size: 16px;
+                    }
+                }
+                
+                @media screen and (max-width: 858px)
+                /*pantallas pequeñas de moviles*/
+                
+                {
+                    .menu {
+                        height: 65px;
+                    }
+                    .btn_menu {
+                        display: inline-flex;
+                        /*con esto se muestra el menu en el lugar que corresponde*/
+                    }
+                    .menu_items {
+                        position: fixed;
+                        /*la sacamos del viewport para hacer el efecto de que ingresa desde arriba*/
+                        width: 100vw;
+                        /*para que ocupe el ancho del viewport*/
+                        height: calc(100% - 65px);
+                        /*el alto es relativo al alto de la pantalla, es decir el 100% menos el tamaño de la barra del menu, con calc el navegador hace el calculo*/
+                        background: #414141;
+                        top: -100vh;
+                        /*con esto saco el menu de la pantalla o del viewport heigth*/
+                        text-align: center;
+                        transition: all .4s;
+                        /*a todas las propiedades*/
+                        /*para que el mennu no este una al lado de otra, en movil, entonces debo cambiar el flex-drection de row a column*/
+                        flex-direction: column;
+                    }
+                    .menu_items li {
+                        margin: 30px 0 0 0;
+                        line-height: 0px;
+                    }
+                    .menu_items li:hover {
+                        background: none;
+                    }
+                    .menu_items li a {
+                        font-size: 20px;
+                        color: #ffffff;
+                        font-weight: bold;
+                    }
+                    .menu_items li a:hover {
+                        color: #e9183b;
+                    }
+                    .logo {
+                        font-size: 25px;
+                        padding-left: 35px;
+                    }
+                }
+                /*verticalmente en movil se vera perfecto, pero se gira el movil el menu no se vera cmpletamente, entonces agrego esta media query*/
+                
+                @media screen and (max-width: 858px) and (orientation:landscape) {
+                    .menu_items {
+                        margin: 5px 0 0 0;
+                    }
+                    .menu_items {
+                        overflow: scroll;
+                        /*para que el usuario pueda arrastrar y ver el ul*/
+                        height: calc (100% - 65px);
+                    }
+                }
